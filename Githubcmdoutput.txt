@@ -1,0 +1,78 @@
+#CMD Output when the github setup was being done 
+Microsoft Windows [Version 10.0.19044.2604]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\tv_wh>cd C:\Users\tv_wh\Desktop\Programming principles
+
+C:\Users\tv_wh\Desktop\Programming principles>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tv_wh\Desktop\Programming principles>git remote add origin "https://github.com/mudog/programmingprinciples"
+error: remote origin already exists.
+
+C:\Users\tv_wh\Desktop\Programming principles>git push --set -upstream origin master
+error: unknown switch `p'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\tv_wh\Desktop\Programming principles>git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 58, done.
+Counting objects: 100% (58/58), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (52/52), done.
+Writing objects: 100% (58/58), 53.57 KiB | 2.98 MiB/s, done.
+Total 58 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/mudog/programmingprinciples/pull/new/master
+remote:
+To https://github.com/mudog/programmingprinciples
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\tv_wh\Desktop\Programming principles>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\tv_wh\Desktop\Programming principles>git push origin
+Everything up-to-date
+
+C:\Users\tv_wh\Desktop\Programming principles>
